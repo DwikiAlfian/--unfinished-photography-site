@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <style>
+        p {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        red {
+            color: #a80101;
+        }
+
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="uk-section-secondary uk-preserve-color">
+
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+
+            <nav class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <div uk-navbar>
+
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="sign_in.html">SIGN IN</a></li>
+                            <li class="uk-active"><a href="about.html">ABOUT</a></li>
+                        </ul>
+                        <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+    <!-- XBOX WALLPAPER -->
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="image/about_wall_black.png"
+        uk-img>
+        <div class="uk-text-center">
+            <h5 uk-scrollspy="cls: uk-animation-slide-right; repeat: true">Hey, looking for designer. Not i am i guess</h5>
+            <h2 uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Here's me <b class="red">Dwiki Alfian</b></h2>
+            <h6 class="uk-heading-line" uk-scrollspy="cls: uk-animation-slide-right; repeat: true"><span><b>STUDENT</b>
+                    |<b>
+                        DESIGNER</b> |<b> PHOTOGRAPHER</b></span></h6>
+        </div>
+    </div>
+
+    <!-- TEXT -->
+    <div class="uk-card uk-card-default uk-card-body">
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <img src="image/avatar2.JPG" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <h3 class="uk-card-title"><b>ABOUT ME</b></h3>
+                    <p>Hey, my name is Dwiki Alfian Putra. I study at Vocational High School First Kepanjen. I am an
+                        ICT
+                        student, this is my first website project. I studied about HTML, CSS, JavaScript. I studied
+                        more
+                        about Adobe Photoshop, Adobe Premiere Pro. I love photography, i have my own DSLR camera at 2
+                        years
+                        ago, i like traveling but i dont hav enough money to travel all time. I build this website
+                        using
+                        UiKit script, you also can use it by download in <a href="http://getuikit.com">getuikit.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICE -->
+    <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            <h3 class="uk-card-title">My Skill</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+        </div>
+        <div>
+            <div class="uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                <p>Photoshop</p>
+                <progress id="js-progressbar" class="uk-progress" value="65" max="100"></progress>
+                <p>HTML</p>
+                <progress id="js-progressbar" class="uk-progress" value="54" max="100"></progress>
+                <p>Premiere Pro</p>
+                <progress id="js-progressbar" class="uk-progress" value="60" max="100"></progress>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-card uk-card-default uk-card-body">
+        <!-- SOCIAL MEDIA -->
+        <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <img src="image/facebook.png" width="50" height="50">
+                <span class="uk-text-middle"><a href="https://facebook.com/">No Span</a></span>
+            </div>
+        </div>
+
+        <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <img src="image/instagram.png" width="50" height="50">
+                <span class="uk-text-middle"><a href="https://www.instagram.com/dwikialvian_/">DwikiAlvian_</a></span>
+            </div>
+        </div>
+
+        <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <img src="image/github.png" width="50" height="50">
+                <span class="uk-text-middle"><a href="https://github.com/DwikiAlfian">DwikiAlfian</a></span>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

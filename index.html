@@ -2,91 +2,28 @@
 <html>
 
 <head>
-    <title>Free Photography Site</title>
+    <title>Photography Site - Homepage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
+        body, li, h5, h6{
+            font-family: 'Poppins', sans-serif;
         }
-
-        body {
-            margin: 0;
-            font-family: Arial;
-            background-image: url(image/navagio.jpg);
-            background-repeat: no-repeat;
-        }
-
-        .header {
-            text-align: center;
-            padding: 32px;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            -ms-flex: 25%;
-            /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-        }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        .bg {
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            z-index: 1;
-            float: left;
-            left: 0;
+        h1, h2, h3, h4{
+            font-family: 'Molengo', sans-serif;
         }
     </style>
 </head>
 
-<body class="uk-background-fixed">
-    <!-- NAVBAR -->
-    <div>
+<body>
+    <!-- TRANSPARENT STICKY NAVBAR -->
+
+    <div class="uk-section-secondary uk-preserve-color">
 
         <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
 
@@ -95,168 +32,320 @@
                     <div uk-navbar>
 
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">HOME</a></li>
-                            <li>
-                                <a href="#">GALLERY</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">HOME</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#">SIGN IN</a></li>
-                            <li><a href="#">ABOUT</a></li>
+                            <li class="uk-active"><a href="index.html">HOME</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="sign_in.html">SIGN IN</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
                         </ul>
+                        <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+                        </div>
 
                     </div>
+
+                </div>
+
             </nav>
-            </div>
-            <br>
-            <!-- SLIDER -->
-            <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="clsActivated: uk-transition-active; center: true">
+        </div>
+    </div>
 
-                <ul class="uk-slider-items uk-grid uk-animation-fade">
-                    <li class="uk-width-1-2">
-                        <div class="uk-panel">
-                            <img src="image/slider/end.jpg" alt="">
-                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                                <h3 class="uk-margin-remove">Welcome to Free Photography Site!</h3>
-                                <p class="uk-margin-remove">Find your own Photos to Wallpaper or Profile Photo.</p>
-                            </div>
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="image/index2.jpg"
+        uk-img>
+        <div class="uk-text-center">
+            <h1 uk-scrollspy="cls: uk-animation-slide-right; repeat: false">Come to looking for something?</h5>
+                <h3 uk-scrollspy="cls: uk-animation-slide-left; repeat: false">Get suppose like home!</h2>
+        </div>
+    </div>
+
+    <!-- FIRST TITLE -->
+
+    <div class="uk-text-center uk-margin-large-top">
+        <h2>Welcome to Photography Site</h2>
+    </div>
+    <div class="uk-text-center">
+        <h5>Discover and Choose your own Photos</h5>
+    </div>
+
+    <!-- SUBTITLE -->
+
+
+
+    <!-- SWITCHER SLIDESHOW GALLERY -->
+    <ul uk-tab class="uk-flex uk-flex-center">
+        <li><a href="#">First List</a></li>
+        <li><a href="#">Second List</a></li>
+        <li><a href="#">Third List</a></li>
+    </ul>
+
+    <ul class="uk-switcher uk-margin">
+        <!-- FIRST LIST -->
+        <li>
+            <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/firstgallery/sea.jpg">
+                                <div class="uk-padding-small"><img src="image/firstgallery/sea.jpg" /></div>
+                            </a>
                         </div>
-                    </li>
-                    <li class="uk-width-1-2">
-                        <div class="uk-panel">
-                            <img src="image/slider/canoe.jpg" alt="">
-                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                                <h3 class="uk-margin-remove">Easy Use</h3>
-                                <p class="uk-margin-remove">Use Category Select or Search</p>
-                            </div>
+                    </div>
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/firstgallery/train.jpg">
+                                <div class="uk-padding-small"><img src="image/firstgallery/train.jpg" /></div>
+                            </a>
                         </div>
-                    </li>
-                    <li class="uk-width-1-2">
-                        <div class="uk-panel">
-                            <img src="image/slider/navagio.jpg" alt="">
-                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                                <h3 class="uk-margin-remove">More Bigger</h3>
-                                <p class="uk-margin-remove">Updated Image</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="uk-width-1-2">
-                        <div class="uk-panel">
-                            <img src="image/slider/paris.jpg" alt="">
-                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                                <h3 class="uk-margin-remove">Free To Use</h3>
-                                <p class="uk-margin-remove">It's all free to use, download. And easly to donate</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-            </div>
-            <div class="uk-margin-small uk-card uk-card-default uk-card-body uk-card-primary">
-
-                <!-- TITLE -->
-                <h2 class="uk-heading-line uk-text-center"><span>Free Photography Site</span></h2>
-                <div>
-
-                    <div class="uk-text-center">
-                        Choose your own photo for Wallpaper or Profile Photo
                     </div>
                 </div>
             </div>
-
-
-            <!-- IMAGE -->
-
-            <div class="row">
-                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div class="uk-padding"><img src="image/firstgallery/sea_tiny.jpg" /></div>
-                    <div class="uk-padding"><img src="image/firstgallery/sea_tiny.jpg" /></div>
-                    <div class="uk-padding"><img src="image/firstgallery/sea_tiny.jpg" /></div>
+            <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/firstgallery/lavender.jpg">
+                                <div class="uk-padding-small"><img src="image/firstgallery/lavender.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div class="uk-padding"><img src="image/firstgallery/sea_tiny.jpg" /></div>
-                    <div class="uk-padding"><img src="image/firstgallery/sea_tiny.jpg" /></div>
-                    <div class="uk-padding"><img src="image/firstgallery/sea_tiny.jpg" /></div>
+                <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/firstgallery/niagara.jpg">
+                                <div class="uk-padding-small"><img src="image/firstgallery/niagara.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="column">
-                    <img src="image/firstgallery/flower.jpg" />
-                    <img src="image/firstgallery/sea_tiny.jpg" />
-
-                </div>
-                <div class="column">
-                    <img src="image/firstgallery/train_tiny.jpg" />
-                    <img src="image/firstgallery/wildflower.jpg">
-
-                </div>
-                <div class="column">
-                    <img src="image/firstgallery/niagara.jpg">
-                    <img src="image/firstgallery/lavender.jpg">
-
-
-                </div>
-
-                <div class="column">
-                    <img src="image/firstgallery/waterfall.jpg">
-                    <img src="image/firstgallery/podere.jpg">
-
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/firstgallery/podere.jpg">
+                                <div class="uk-padding-small"><img src="image/firstgallery/podere.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </li>
 
-            <!-- SLIDER -->
-
-            <h3 class="uk-heading-line uk-text-center"><span>Other Gallery</span></h3>
-            <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
-
-                <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
-                    <li class="uk-width-2-3">
-                        <div class="uk-cover-container">
-                            <img src="image/other_gallery/navagio.jpg" alt="" uk-cover>
-                            <div class="uk-position-center uk-panel">
-                            </div>
+        <!-- SECOND LIST -->
+        <li>
+            <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/space/astronout.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/space/astronout.jpg" /></div>
+                            </a>
                         </div>
-                    </li>
-                    <li class="uk-width-2-3">
-                        <div class="uk-cover-container">
-                            <img src="image/other_gallery/sky.jpg" alt="" uk-cover>
-                            <div class="uk-position-center uk-panel">
-                            </div>
+                    </div>
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/space/castronout.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/space/castronout.jpg" /></div>
+                            </a>
                         </div>
-                    </li>
-                    <li class="uk-width-2-3">
-                        <div class="uk-cover-container">
-                            <img src="image/other_gallery/canoe.jpg" alt="" uk-cover>
-                            <div class="uk-position-center uk-panel">
-                            </div>
+                    </div>
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/space/darklight.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/space/darklight.jpg" /></div>
+                            </a>
                         </div>
-                    </li>
-                    <li class="uk-width-2-3">
-                        <div class="uk-cover-container">
-                            <img src="image/other_gallery/eiffel.jpg" alt="" uk-cover>
-                            <div class="uk-position-center uk-panel">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="uk-width-2-3">
-                        <div class="uk-cover-container">
-                            <img src="image/other_gallery/purplesky.jpg" alt="" uk-cover>
-                            <div class="uk-position-center uk-panel">
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
+                    </div>
+                </div>
             </div>
+            <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/space/mlikyway.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/space/mlikyway.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/space/proximacentauri.jpg" width="100%">
+                                <div class="uk-padding-small"><img src="image/gallery/space/proximacentauri.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- THIRD LIST -->
+        <li>
+            <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/animal/panda.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/animal/panda.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/animal/puffin.jpg" width="100%">
+                                <div class="uk-padding-small"><img src="image/gallery/animal/puffin.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/animal/castronout.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/animal/castronout.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-left; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/animal/catgrass.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/animal/catgrass.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/animal/flamingo.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/animal/flamingo.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
+                    <div class="uk-animation-fade">
+                        <div uk-lightbox>
+                            <a href="image/gallery/animal/horse.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/animal/horse.jpg" /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <!-- SUBTITLE -->
+    <div class="uk-text-center uk-margin-large-top uk-heading-line">
+        <h2>Be Brilliant</h2>
+    </div>
+    <div class="uk-text-center">
+        <h5>More Photos Update In Week or even Daily!</h5>
+    </div>
+
+
+    <div class="uk-margin uk-margin-small uk-margin-left uk-margin-right">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-2-3@m">
+                <p>
+                    <h3>Get a fresh Desktop</h3>
+                </p>
+                <p>
+                    <h5>You can download the Photos dan place it as your Desktop Wallpaper. If you choose the right
+                        Photos, it can increase your mood in Working or Studying. There are three category of Photos:
+                        Panorama, Spaces, and Animals. Example if you are a cat lover you can find a cute cat in
+                        Animals Category that you can find in Gallery Page</h5>
+                </p>
+                <a href="gallery.html"><button class="uk-button uk-button-primary">GALLERY</button></a>
+            </div>
+            <div class="uk-width-1-3@m uk-flex-first">
+                <img src="image/laptopsketchwall.jpg" alt="Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-margin uk-margin-small uk-margin-left uk-margin-right">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-2-3@m uk-flex-first uk-text-right">
+                <p>
+                    <h3>Help Improve</h3>
+                </p>
+                <p>
+                    <h5>Help us to improve the website by Donating or Help us build a Community. A community can
+                        improving the website for became big and even bigger. See my full Portofolio for Contact</h5>
+                </p>
+                <a href="about.html"><button class="uk-button uk-button-primary">ABOUT ME</button></a>
+            </div>
+            <div class="uk-width-1-3@m">
+                <img src="image/all.jpg" alt="Image">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SAMPLE SUBTITLED GALLERY -->
+
+
+
+    <!-- JOIN COMMUNITY -->
+    <div class="uk-text-center uk-margin-large-top">
+        <h2>Take wherever you are</h2>
+    </div>
+    <div class="uk-text-center">
+        <h5>Get it on your Smartphone for FREE</h5>
+    </div>
+    <div class="uk-margin uk-margin-small uk-margin-large-left uk-margin-large-right">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-2-3@m">
+                <p>
+                    <h3>Download App On Your Mobile Device</h3>
+                </p>
+                <p>
+                    <h5>App on mobile is under progress. So maybe there is a bug </h5>
+                </p>
+                <div>
+                    <a href=""><img src="image/googleplay.png" width="150" height="150"></a>
+                    <a href=""><img src="image/appstore.png" width="150" height="150"></a>
+                </div>
+            </div>
+            <div class="uk-width-1-3@m uk-flex-first">
+                <img src="image/phoness.jpg" alt="Image">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-4@l">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+
+    <!-- IMAGE FOOTER -->
+    <div class="uk-height-large uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-dark" data-src="image/arctic_fox_wall.jpg"
+        uk-img>
+        <div class="uk-text-center uk-text-bottom">
+            <h6><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>2018 Copyright Dwiki Alfian</h6>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

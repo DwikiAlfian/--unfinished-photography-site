@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Log In</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <style>
+        h2 {
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        h3 {
+            font-family: 'Righteous', cursive;
+        }
+
+        psw {
+            display: block;
+            float: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SIGN IN FORM -->
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+            <img class="uk-background-cover uk-background-fixed" src="image/sign_in_background.jpg" alt="background" uk-cover>
+            <canvas width="700" height="800"></canvas>
+        </div>
+        <div>
+            <!-- TITLE -->
+            <h2 class="uk-text-center uk-card uk-card-body uk-card-primary">Sign In</h2>
+            <div class="uk-card-body">
+                <h3>Username</h3>
+                <form>
+                    <input class="uk-input uk-width-2-3" type="text" placeholder="Username/ID">
+                </form>
+                <h3>Password</h3>
+                <form>
+                    <input class="uk-input uk-width-2-3" type="password" placeholder="Password">
+                </form>
+                <p uk-margin>
+                    <button class="uk-button uk-button-default uk-button-small">Sign In</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
