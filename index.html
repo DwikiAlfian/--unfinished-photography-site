@@ -11,10 +11,17 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
     <style>
-        body, li, h5, h6{
+        body,
+        li,
+        h5,
+        h6 {
             font-family: 'Poppins', sans-serif;
         }
-        h1, h2, h3, h4{
+
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Molengo', sans-serif;
         }
     </style>
@@ -33,7 +40,7 @@
 
                         <ul class="uk-navbar-nav">
                             <li class="uk-active"><a href="index.html">HOME</a></li>
-                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="gallery_admin.html">GALLERY</a></li>
                             <li><a href="sign_in.html">SIGN IN</a></li>
                             <li><a href="about.html">ABOUT</a></li>
                         </ul>
@@ -59,12 +66,13 @@
     </div>
 
     <!-- FIRST TITLE -->
-
-    <div class="uk-text-center uk-margin-large-top">
-        <h2>Welcome to Photography Site</h2>
-    </div>
-    <div class="uk-text-center">
-        <h5>Discover and Choose your own Photos</h5>
+    <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 300">
+        <div class="uk-text-center uk-margin-large-top">
+            <h2>Welcome to Photography Site</h2>
+        </div>
+        <div class="uk-text-center">
+            <h5>Discover and Choose your own Photos</h5>
+        </div>
     </div>
 
     <!-- SUBTITLE -->
@@ -167,8 +175,8 @@
                 <div uk-scrollspy="cls: uk-animation-slide-right; repeat: false" class="uk-animation-toggle">
                     <div class="uk-animation-fade">
                         <div uk-lightbox>
-                            <a href="image/gallery/space/mlikyway.jpg">
-                                <div class="uk-padding-small"><img src="image/gallery/space/mlikyway.jpg" /></div>
+                            <a href="image/gallery/space/milkyway.jpg">
+                                <div class="uk-padding-small"><img src="image/gallery/space/milkyway.jpg" /></div>
                             </a>
                         </div>
                     </div>
@@ -250,48 +258,53 @@
 
 
     <!-- SUBTITLE -->
-    <div class="uk-text-center uk-margin-large-top uk-heading-line">
-        <h2>Be Brilliant</h2>
-    </div>
-    <div class="uk-text-center">
-        <h5>More Photos Update In Week or even Daily!</h5>
-    </div>
-
-
-    <div class="uk-margin uk-margin-small uk-margin-left uk-margin-right">
-        <div class="uk-flex-middle" uk-grid>
-            <div class="uk-width-2-3@m">
-                <p>
-                    <h3>Get a fresh Desktop</h3>
-                </p>
-                <p>
-                    <h5>You can download the Photos dan place it as your Desktop Wallpaper. If you choose the right
-                        Photos, it can increase your mood in Working or Studying. There are three category of Photos:
-                        Panorama, Spaces, and Animals. Example if you are a cat lover you can find a cute cat in
-                        Animals Category that you can find in Gallery Page</h5>
-                </p>
-                <a href="gallery.html"><button class="uk-button uk-button-primary">GALLERY</button></a>
-            </div>
-            <div class="uk-width-1-3@m uk-flex-first">
-                <img src="image/laptopsketchwall.jpg" alt="Image">
-            </div>
+    <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 300">
+        <div class="uk-text-center uk-margin-large-top uk-heading-line">
+            <h2>Be Brilliant</h2>
+        </div>
+        <div class="uk-text-center">
+            <h5>More Photos Update In Week or even Daily!</h5>
         </div>
     </div>
 
-    <div class="uk-margin uk-margin-small uk-margin-left uk-margin-right">
-        <div class="uk-flex-middle" uk-grid>
-            <div class="uk-width-2-3@m uk-flex-first uk-text-right">
-                <p>
-                    <h3>Help Improve</h3>
-                </p>
-                <p>
-                    <h5>Help us to improve the website by Donating or Help us build a Community. A community can
-                        improving the website for became big and even bigger. See my full Portofolio for Contact</h5>
-                </p>
-                <a href="about.html"><button class="uk-button uk-button-primary">ABOUT ME</button></a>
+    <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 300">
+        <div class="uk-margin uk-margin-small uk-margin-left uk-margin-right">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-2-3@m">
+                    <p>
+                        <h3>Get a fresh Desktop</h3>
+                    </p>
+                    <p>
+                        <h5>You can download the Photos dan place it as your Desktop Wallpaper. If you choose the right
+                            Photos, it can increase your mood in Working or Studying. There are three category of
+                            Photos:
+                            Panorama, Spaces, and Animals. Example if you are a cat lover you can find a cute cat in
+                            Animals Category that you can find in Gallery Page</h5>
+                    </p>
+                    <a href="gallery.html"><button class="uk-button uk-button-primary">GALLERY</button></a>
+                </div>
+                <div class="uk-width-1-3@m uk-flex-first">
+                    <img src="image/laptopsketchwall.jpg" alt="Image">
+                </div>
             </div>
-            <div class="uk-width-1-3@m">
-                <img src="image/all.jpg" alt="Image">
+        </div>
+    </div>
+    <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 300">
+        <div class="uk-margin uk-margin-small uk-margin-left uk-margin-right">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-2-3@m uk-flex-first uk-text-right">
+                    <p>
+                        <h3>Help Improve</h3>
+                    </p>
+                    <p>
+                        <h5>Help us to improve the website by Donating or Help us build a Community. A community can
+                            improving the website for became big and even bigger. See my full Portofolio for Contact</h5>
+                    </p>
+                    <a href="about.html"><button class="uk-button uk-button-primary">ABOUT ME</button></a>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <img src="image/all.jpg" alt="Image">
+                </div>
             </div>
         </div>
     </div>
@@ -302,38 +315,51 @@
 
 
     <!-- JOIN COMMUNITY -->
-    <div class="uk-text-center uk-margin-large-top">
-        <h2>Take wherever you are</h2>
-    </div>
-    <div class="uk-text-center">
-        <h5>Get it on your Smartphone for FREE</h5>
-    </div>
-    <div class="uk-margin uk-margin-small uk-margin-large-left uk-margin-large-right">
-        <div class="uk-flex-middle" uk-grid>
-            <div class="uk-width-2-3@m">
-                <p>
-                    <h3>Download App On Your Mobile Device</h3>
-                </p>
-                <p>
-                    <h5>App on mobile is under progress. So maybe there is a bug </h5>
-                </p>
-                <div>
-                    <a href=""><img src="image/googleplay.png" width="150" height="150"></a>
-                    <a href=""><img src="image/appstore.png" width="150" height="150"></a>
+    <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 300">
+        <div class="uk-text-center uk-margin-large-top">
+            <h2>Take wherever you are</h2>
+        </div>
+        <div class="uk-text-center">
+            <h5>Get it on your Smartphone for FREE</h5>
+        </div>
+        <div class="uk-margin uk-margin-small uk-margin-large-left uk-margin-large-right">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-2-3@m">
+                    <p>
+                        <h3>Download App On Your Mobile Device</h3>
+                    </p>
+                    <p>
+                        <h5>App on mobile is under progress. So maybe there is a bug </h5>
+                    </p>
+                    <div>
+                        <a href=""><img src="image/googleplay.png" width="150" height="150"></a>
+                        <a href=""><img src="image/appstore.png" width="150" height="150"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="uk-width-1-3@m uk-flex-first">
-                <img src="image/phoness.jpg" alt="Image">
+                <div class="uk-width-1-3@m uk-flex-first">
+                    <img src="image/phoness.jpg" alt="Image">
+                </div>
             </div>
         </div>
     </div>
 
 
     <!-- FOOTER -->
-    <div class="uk-column-1-2@s uk-column-1-3@m uk-column-1-4@l">
-        <p></p>
-        <p></p>
-        <p></p>
+    <div uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 300">
+        <div class="uk-grid-divider uk-child-width-expand@s uk-margin-left uk-margin-right" uk-grid>
+            <div>
+                <h5>2018 NorArt<br><br>NorArt is an fictional name creted by me at the same time i create this website</h5>
+            </div>
+            <div>
+                <h5>In fact we don't deserve any of work, its only a coy/paster progress</h5>
+            </div>
+            <div>
+                <h5>For more about me you can see at About Page</h5>
+            </div>
+            <div>
+
+            </div>
+        </div>
     </div>
 
 
